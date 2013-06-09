@@ -28,7 +28,7 @@ define(function(require, exports, module) {
   });
 
   // Automatically load the Bootstrap components.
-  app.registerComponent(require("components/bootstrap/bootstrap"));
+  WebApp.Component.register(require("bootstrap-component"));
 
   module.exports = app;
 });
