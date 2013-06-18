@@ -11,12 +11,19 @@
 <body>
   <!-- Application container. -->
   <main role="main" id="main">
-    <layout template="app/templates/test"></layout>
+    <h1>My awesome site</h1>
 
-    <x-bootstrap-collapse></x-bootstrap-collapse>
+    <webapp-view template="app/templates/test"></webapp-view>
+
+    <hr>
+
+    <webapp-view fun="test">
+      Is this fun? <%= fun %>
+    </webapp-view>
   </main>
 
   <!-- Application source. -->
-  <script data-main="/app/main" src="/vendor/bower/requirejs/require.js"></script>
+  <script data-main="/app/main"
+    src="/vendor/bower/requirejs/require.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ require.config({
     "objectObserve": "../vendor/library/vendor/shim/Object.observe.poly",
 
     // Third-party components.
-    "bootstrap-component": "../vendor/components/bootstrap/source"
+    "bootstrap-component": "components/bootstrap/index"
   },
 
   include: "webapp"
